@@ -31,6 +31,10 @@
 (setq tab-width 2)          ; 2 char wide for TAB
 (setq-default indent-tabs-mode nil) ; Force use of spaces
 
+; highlight matching parens
+(require-package 'mic-paren)
+(paren-activate)
+
 ; Add evil repository path
 ; git clone git://gitorious.org/evil/evil.git
 (add-to-list 'load-path "~/.emacs.d/evil")
