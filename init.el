@@ -2,6 +2,15 @@
 (setq inhibit-splash-screen t)
 (setq inhibit-startup-message t)
 
+(add-to-list 'load-path user-emacs-directory)
+(add-to-list 'load-path (concat user-emacs-directory "config"))
+
+; Common lisp
+(require 'cl)
+
+;; script to automatically pull packages from melpa, org, marmalade and gnu
+(require 'init-packages)
+
 ; highlight whitespace
 (require 'whitespace)
 ; highlight when a line goes beyond X columns
