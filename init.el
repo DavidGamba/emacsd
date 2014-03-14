@@ -2,6 +2,14 @@
 (setq inhibit-splash-screen t)
 (setq inhibit-startup-message t)
 
+; highlight whitespace
+(require 'whitespace)
+; highlight when a line goes beyond X columns
+(setq-default whitespace-line-column 80)
+; what to highlight
+(setq-default whitespace-style '(face trailing tabs lines-tail newline empty indentation::space tab-mark ))
+(global-whitespace-mode 1)
+
 ; line numbers
 (global-linum-mode t)
 ; line number format 4 digits and | symbol
