@@ -4,6 +4,7 @@
 
 (add-to-list 'load-path user-emacs-directory)
 (add-to-list 'load-path (concat user-emacs-directory "config"))
+; (add-to-list 'custom-theme-load-path (concat user-emacs-directory "themes") )
 
 ; Common lisp
 (require 'cl)
@@ -86,3 +87,6 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 
 (require-package 'surround)
 (global-surround-mode 1)
+
+(require-package 'solarized-theme)
+(load-theme 'solarized-dark t)
