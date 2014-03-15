@@ -1,0 +1,5 @@
+= emacsd
+
+Lots of the code has been inspired by https://github.com/bling/dotemacs.git[bling/dotemacs] but his setup is too complicated so I prefer to start simple and only add things that I need and look at his code to see how he came up with some solutions.
+
+Enjoy!
