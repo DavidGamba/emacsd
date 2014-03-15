@@ -11,6 +11,35 @@
 ;; script to automatically pull packages from melpa, org, marmalade and gnu
 (require 'init-packages)
 
+; Add evil repository path
+; git clone git://gitorious.org/evil/evil.git
+(add-to-list 'load-path "~/.emacs.d/git/evil")
+; (require-package 'evil)
+; git clone https://github.com/cofi/evil-leader.git
+(add-to-list 'load-path "~/.emacs.d/git/evil-leader")
+; (require-package 'evil-leader)
+(require-package 'evil-nerd-commenter)
+(require-package 'evil-matchit)
+
+(require 'evil)
+(require 'evil-leader)
+(require 'evil-nerd-commenter)
+
+; evil-leader config
+; enable before evil mode
+(global-evil-leader-mode)
+(evil-leader/set-leader ",")
+
+(evil-leader/set-key
+  "w" 'save-buffer
+)
+
+; evil-nerd-commenter keybindings
+(define-key evil-normal-state-map "//" 'evilnc-comment-or-uncomment-lines )
+(define-key evil-visual-state-map "//" 'evilnc-comment-or-uncomment-lines )
+
+(evil-mode 1)
+
 ; highlight whitespace
 (require 'whitespace)
 ; highlight when a line goes beyond X columns
@@ -35,11 +64,6 @@
 (require-package 'mic-paren)
 (paren-activate)
 
-; Add evil repository path
-; git clone git://gitorious.org/evil/evil.git
-(add-to-list 'load-path "~/.emacs.d/evil")
-(require 'evil)
-(evil-mode 1)
 
 ;; esc quits
 (defun minibuffer-keyboard-quit ()
