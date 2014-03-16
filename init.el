@@ -90,3 +90,6 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 
 (require-package 'solarized-theme)
 (load-theme 'solarized-dark t)
+
+; scala-mode2 recommended over scala-mode
+(require-package 'scala-mode2)
