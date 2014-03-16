@@ -19,12 +19,9 @@
 
 (evil-leader/set-key
   "w" 'save-buffer
+  ; evil-nerd-commenter keybindings
+  "," 'evilnc-comment-or-uncomment-lines
 )
-
-; evil-nerd-commenter keybindings
-(define-key evil-normal-state-map "//" 'evilnc-comment-or-uncomment-lines )
-(define-key evil-visual-state-map "//" 'evilnc-comment-or-uncomment-lines )
-
 
 ; highlight whitespace
 (require 'whitespace)
