@@ -14,14 +14,7 @@
 
 ; evil configuration file
 (require 'init-evil)
-
-(evil-leader/set-leader ",")
-
-(evil-leader/set-key
-  "w" 'save-buffer
-  ; evil-nerd-commenter keybindings
-  "," 'evilnc-comment-or-uncomment-lines
-)
+(require 'init-keybindings)
 
 ; highlight whitespace
 (require 'whitespace)
