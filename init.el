@@ -96,3 +96,6 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 (setq show-paren-style 'expression)
 (set-face-attribute 'show-paren-match-face nil
                     :background "dark slate gray" :foreground nil)
+
+; Autoclose parens
+(electric-pair-mode +1)
