@@ -14,6 +14,9 @@
 (require 'evil-leader)
 (require 'evil-nerd-commenter)
 
+; C-u scrolls
+(setq evil-want-C-u-scroll t)
+
 ; evil-leader config
 ; enable before evil mode
 (global-evil-leader-mode)
