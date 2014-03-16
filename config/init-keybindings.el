@@ -10,6 +10,9 @@
 (define-key evil-normal-state-map (kbd "<down>") 'evil-scroll-line-down)
 (define-key evil-normal-state-map (kbd "<up>") 'evil-scroll-line-up)
 
+; yy copies a line, use Y for y$
+(define-key evil-normal-state-map (kbd "Y") (kbd "y$"))
+
 ; More around splits
 (define-key evil-normal-state-map (kbd "C-h") 'evil-window-left)
 (define-key evil-normal-state-map (kbd "C-j") 'evil-window-down)
