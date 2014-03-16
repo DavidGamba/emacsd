@@ -6,6 +6,10 @@
   "," 'evilnc-comment-or-uncomment-lines
 )
 
+; Make arrow keys scroll
+(define-key evil-normal-state-map (kbd "<down>") 'evil-scroll-line-down)
+(define-key evil-normal-state-map (kbd "<up>") 'evil-scroll-line-up)
+
 ; More around splits
 (define-key evil-normal-state-map (kbd "C-h") 'evil-window-left)
 (define-key evil-normal-state-map (kbd "C-j") 'evil-window-down)
