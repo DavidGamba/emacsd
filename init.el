@@ -61,11 +61,6 @@
 (setq tab-width 2)          ; 2 char wide for TAB
 (setq-default indent-tabs-mode nil) ; Force use of spaces
 
-; highlight matching parens
-(require-package 'mic-paren)
-(paren-activate)
-
-
 ;; esc quits
 (defun minibuffer-keyboard-quit ()
   "Abort recursive edit.
@@ -93,3 +88,11 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 
 ; scala-mode2 recommended over scala-mode
 (require-package 'scala-mode2)
+
+; Show matching parens
+(setq show-paren-delay 0)
+(show-paren-mode t)
+; Highlights the background of the expresion
+(setq show-paren-style 'expression)
+(set-face-attribute 'show-paren-match-face nil
+                    :background "dark slate gray" :foreground nil)
