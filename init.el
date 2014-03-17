@@ -15,6 +15,7 @@
 ; evil configuration file
 (require 'init-evil)
 (require 'init-keybindings)
+(require 'init-flycheck)
 
 ; highlight whitespace
 (require 'whitespace)

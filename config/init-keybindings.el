@@ -4,6 +4,7 @@
   "w" 'save-buffer
   ; evil-nerd-commenter keybindings
   "," 'evilnc-comment-or-uncomment-lines
+  "e" 'flycheck-next-error
 )
 
 ; Make arrow keys scroll
